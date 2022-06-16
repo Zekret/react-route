@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route, Routes, useNavigate } from 'react-router-dom';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
 
@@ -11,16 +11,16 @@ const Dashboard = () => {
 
     return (
         <div>
-            <h1>Dashboard</h1>
+            <Outlet />
             <button onClick={handleClick}>
                 Logout
             </button>
             <Link to='welcome'>
                 Say Welcome
             </Link>
-            <Routes>
-                <Route path='/welcome' element={<p>Welcome</p>} />
-            </Routes>
+            <Link to='goodbye'>
+                Say GoodBye
+            </Link>
         </div>
     );
 };
