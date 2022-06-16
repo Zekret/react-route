@@ -6,6 +6,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import NavBar from './components/NavBar';
 import UsersPage from './pages/UsersPage';
 import UserPage from './pages/UserPage';
+import Dashboard from './pages/Dashboard';
 //Punto de entrada donde se renderizan todas las vistas y componentes.
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/users' element={<UsersPage />} />
         <Route path='/usuarios' element={<Navigate to="users" />} />
         <Route path='/users/:id' element={<UserPage />} />
+        <Route path='/dashboard' element={<Dashboard />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </Router>
