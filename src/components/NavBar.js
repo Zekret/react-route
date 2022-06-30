@@ -4,32 +4,28 @@ import '../style/navbar.css'
 
 const NavBar = () => {
     return (
-        <div>
-            <ul>
-                <li>
-                    <NavLink
-                        className={({ isActive }) => (isActive ? "active" : "")}
-                        to='/'
-                    >
-                        Home
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        className={({ isActive }) => (isActive ? "active" : "")}
-                        to='/about'>
-                        About
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        className={({ isActive }) => (isActive ? "active" : "")}
-                        to='/users'
-                    >
-                        Users
-                    </NavLink>
-                </li>
-            </ul>
+        <div className='nav-container'>
+            <NavLink
+                className={({ isActive }) => (isActive ? "active" : "normal")}
+                to='/'
+            >
+                Home
+            </NavLink>
+
+
+            <NavLink
+                className={({ isActive }) => (isActive ? "active" : "normal")}
+                to='/about'>
+                About
+            </NavLink>
+
+
+            <NavLink
+                className={({ isActive }) => (isActive ? "active" : "normal")}
+                to='/users'
+            >
+                Users
+            </NavLink>
         </div>
     );
 };

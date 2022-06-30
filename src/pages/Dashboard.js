@@ -9,9 +9,10 @@ const Dashboard = () => {
         navigate('/')
     }
 
+    // Se usa outlet para poder renderizar sub-rutas de una ruta.
     return (
         <div>
-            <Outlet />
+            <Outlet /> 
             <button onClick={handleClick}>
                 Logout
             </button>
