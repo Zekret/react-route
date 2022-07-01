@@ -3,10 +3,12 @@ import { useParams } from 'react-router-dom';
 
 const UserPage = () => {
 
+    //Id proviene de el archivo HomePage.js
+
     const { id } = useParams()
     return (
         <div>
-            User <h1>{id}</h1>
+            <h1>{id}</h1>
         </div>
     );
 };

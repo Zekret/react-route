@@ -16,7 +16,7 @@ const NavBar = () => {
             <NavLink
                 className={({ isActive }) => (isActive ? "active" : "normal")}
                 to='/about'>
-                Curiosidades
+                Info
             </NavLink>
 
 
@@ -24,7 +24,7 @@ const NavBar = () => {
                 className={({ isActive }) => (isActive ? "active" : "normal")}
                 to='/users'
             >
-                Canciones
+                Usuarios
             </NavLink>
         </div>
     );
